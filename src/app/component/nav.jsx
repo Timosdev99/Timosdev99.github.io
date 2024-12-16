@@ -8,14 +8,30 @@ const nav = () => {
     const pathname = usePathname()
 
     return (
-        <nav className="flex justify-center items-center p-4"> 
-        <div className="absolute top-6 left-50">
-        <Link href="/" className= "mr-4 text-xl hover:text-yellow-300 transition-all 500  all ease-linear hover:text-2xl">Home</Link>
-        <Link href="/about" className="mr-4 text-xl hover:text-yellow-300 transition-all 500  all ease-linear hover:text-2xl" >portfolio</Link>
-        <Link href="/product" className="mr-4 text-xl hover:text-yellow-300 transition-all 500  all ease-linear hover:text-2xl">blog</Link>
+        <nav className="flex justify-start items-center p-4 relative text ">
+  <div className="absolute top-6 left-48">
+    <Link
+      href="/"
+      className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
+    >
+      Home
+    </Link>
+    <Link
+      href="/portfolio"
+      className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
+    >
+      Portfolio
+    </Link>
+    <Link
+      href="/blog"
+      className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
+    >
+      Blog
+    </Link>
+  </div>
   
-        </div>
-          </nav>
+</nav>
+
     )
 }
 

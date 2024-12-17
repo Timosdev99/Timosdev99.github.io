@@ -22,9 +22,9 @@ const skillset = [
     {name: "Socketio", icon: "devicon-socketio-original colored"},
     {name: "Vscode", icon:"devicon-vscode-plain colored"},
     {name: "vim", icon: "devicon-vim-plain colored"},
-    { name: "Restful API", icon: "devicon-restfulapi-original" },
-    { name: "Problem Solving", icon: "devicon-problem-solving-original colored" },
-    { name: "Team Work", icon: "devicon-teamwork-original colored" },
+    { name: "</> Restful API", icon: "devicon-restfulapi-original" },
+    { name: "</> Problem Solving", icon: "devicon-problem-solving-original colored" },
+    { name: "</> Team Work", icon: "devicon-teamwork-original colored" },
 
   ];
   

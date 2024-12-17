@@ -1,24 +1,33 @@
 "use client";
-
-import { useEffect, useState } from "react";
-
-const platfrom = ["more about me", "my portfolio", "my github", "my blog"];
+import Link from 'next/link';
+const buttonLinks = [
+    { label: "Projects", link: "/projects" },
+    { label: "Portfolio", link: "/portfolio" },
+    { label: "Blog", link: "/blog" },
+    { label: "About Me", link: "/about" }
+  ];
+  
+  const ButtonSection = () => {
+    return (
+      <div className="flex flex-wrap gap-4 justify-center p-4">
+        {buttonLinks.map((button, index) => (
+          <Link
+            key={index}
+            href={button.link}
+            className="text-white text-xl rounded-3xl bg-slate-800  px-4 py-2 hover:text-green-500 transition-all 500 ease-linear hover:text-2xl"
+          >
+            {button.label}
+          </Link>
+        ))}
+      </div>
+    );
+  };
 
 const IntroCard = () => {
-  const [loading, setloading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setloading(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return ( <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <h1 className="text-7xl text-green-400 font-sans">TIMOSDEV99</h1>
-
-</div>)
 
   return (
     <div className="mb-80 left-44 absolute top-40 ">
+        
       <h1 className="text-6xl text-slate-100 font-bold">TIMOSDEV99</h1>
       <br />
       <br />
@@ -28,13 +37,7 @@ const IntroCard = () => {
       <br />
       <br />
       <div className="flex space-x-4">
-        {platfrom.map((platform, index) => (
-          <span key={index}
-           className="text-white rounded-3xl bg-slate-800  px-4 py-2 hover:text-green-500 transition-all 500 ease-linear hover:text-xl"
-           >
-            {platform}
-          </span>
-        ))}
+        <ButtonSection/>
       </div>
     </div>
   );

@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <footer>
-          <Footer />
+          {/* <Footer /> */}
         </footer>
       </body>
     </html>

@@ -40,8 +40,6 @@ const skillset = [
             key={index}
             className="px-4 py-2  bg-slate-800 rounded-3xl text-3xl text-white hover:bg-slate-600 transition-all "
           >
-           
-            
             <i className= {`${skill.icon} mr-4`}></i> 
             {skill.name}
           </span>

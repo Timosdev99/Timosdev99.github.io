@@ -1,6 +1,7 @@
 import Introcard from "./component/introcard";
 import Intro from "./component/me";
 import Skill from "./component/skills";
+import Aboutme from "./component/aboutme";
 export default function Home() {
   return (
     <div className="flex flex-col items-center min-h-screen gap-16 p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -16,6 +17,9 @@ export default function Home() {
       <section className="w-full flex justify-center">
         <Skill />
       </section>
+
+      <Aboutme/>
+
     </div>
   );
 }

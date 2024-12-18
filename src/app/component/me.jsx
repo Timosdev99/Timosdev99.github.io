@@ -29,7 +29,7 @@ const Intro = () => {
         <div className="top-80 mt-32">
             <h1 className="text-center justify-center text-white text-xl">Introduction</h1>
             <br />
-            <div className="text-2xl w-[1300px]  text-gray-400 font-light">
+            <div className="text-xl w-[1300px]  text-gray-400 font-light">
             <p>thanks for getting this far. Welcome to my personal web site where i will share my skill, experience, projects, more about me and my journey as a programmer and what i have learnt </p>
             <br />
             <p>always feel free if you want to reach out to me or would like to collaborate on a project</p>

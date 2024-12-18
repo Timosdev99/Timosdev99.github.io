@@ -12,7 +12,7 @@ const skillset = [
     { name: "C lang", icon: "devicon-c-plain-wordmark colored" },
     { name: "Zig", icon: "devicon-zig-original colored" },
     { name: "Vercel", icon: "devicon-vercel-original colored" },
-    { name: "AWS", icon: "devicon-aws-original colored" },
+    { name: "Nodemon", icon: "devicon-nodemon-plain colored" },
     { name: "Aws", icon: "devicon-amazonwebservices-plain-wordmark colored" },
     { name: "Git", icon: "devicon-git-plain colored" },
     { name: "Github", icon: "devicon-github-original colored" },
@@ -28,23 +28,27 @@ const skillset = [
 
   ];
   
-  
-  const Skill = () => {
-    return (
-        
-      <div>
-        <h1 className="text-center justify-center text-white text-xl ">Skills</h1>
-        <div className="grid grid-cols-4 gap-x-6 gap-y-6 p-2">
+  const Skilldisplay = () => {
+    return ( <div className="grid grid-cols-4 gap-x-6 gap-y-6 p-2">
         {skillset.map((skill, index) => (
           <span
             key={index}
-            className="px-4 py-2  bg-slate-800 rounded-3xl text-3xl text-white hover:bg-slate-600 transition-all "
+            className="px-4 py-2 bg-slate-800 justify-center text-center rounded-3xl text-xl text-white hover:bg-slate-600 transition-all "
           >
             <i className= {`${skill.icon} mr-4`}></i> 
             {skill.name}
           </span>
         ))}
-      </div>
+      </div>)
+  }
+
+  const Skill = () => {
+    return (
+        
+      <div>
+        <h1 className="text-center justify-center text-white text-xl ">Skills</h1>
+        <br />
+        <Skilldisplay/>
     
     <div>
 

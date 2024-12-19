@@ -1,4 +1,5 @@
 import { devicon } from 'devicon';
+import { useState } from 'react';
 
 const skillset = [
     { name: "javascript", icon: "devicon-javascript-plain colored " },
@@ -44,7 +45,6 @@ const skillset = [
 
   const Skill = () => {
     return (
-        
       <div>
         <h1 className="text-center justify-center text-white text-xl ">Skills</h1>
         <br />

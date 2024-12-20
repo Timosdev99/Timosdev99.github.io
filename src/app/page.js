@@ -30,7 +30,7 @@ export default function Home() {
      
       {show && (
        <div>
-         <section className="w-full flex justify-center mt-8">
+         <section className="w-full flex justify-center ">
           <Skill />
         </section>
         <br />

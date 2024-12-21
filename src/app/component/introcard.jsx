@@ -1,5 +1,6 @@
 "use client";
 import Link from 'next/link';
+import Image from 'next/image';
 const buttonLinks = [
     { label: "Projects", link: "/projects" },
     { label: "Portfolio", link: "/portfolio" },
@@ -26,8 +27,7 @@ const buttonLinks = [
 const IntroCard = () => {
 
   return (
-    <div className="mb-80 left-44 absolute top-40 ">
-        
+    <div className="mb-80 left-44 absolute top-48 ">
       <h1 className="text-6xl text-slate-100 font-bold">TIMOSDEV99</h1>
       <br />
       <br />
@@ -39,6 +39,16 @@ const IntroCard = () => {
       <div className="flex space-x-4">
         <ButtonSection/>
       </div>
+      
+      <Image
+      src="/cool.jpg"
+      alt="Example image"
+      width={500} 
+      height={500}
+       className="rounded-full object-cover absolute left-[1000px] bottom-1"
+      />
+      
+    
     </div>
   );
 };

@@ -29,7 +29,7 @@ const nav = () => {
       Blog
     </Link>
   </div>
-  
+ 
 </nav>
 
 

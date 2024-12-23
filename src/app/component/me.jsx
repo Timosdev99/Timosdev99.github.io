@@ -15,7 +15,7 @@ const buttonLinks = [
             href={button.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-slate-800 rounded-3xl text-xl text-white  hover:text-green-400  transition-all hover:text-2xl"
+            className="px-4 py-2 bg-gradient-to-r from-green-500 to-black-400 rounded-3xl text-xl text-white  hover:text-green-400  transition-all hover:text-2xl"
           >
             {button.label}
           </a>

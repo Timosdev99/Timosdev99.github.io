@@ -15,7 +15,7 @@ const buttonLinks = [
           <Link
             key={index}
             href={button.link}
-            className="text-white text-xl rounded-3xl bg-slate-800  px-4 py-2 hover:text-green-500 transition-all 500 ease-linear hover:text-2xl"
+            className="text-white text-xl rounded-3xl bg-gradient-to-r from-green-500 to-black-900  px-4 py-2 hover:text-green-500 transition-all 500 ease-linear hover:text-2xl"
           >
             {button.label}
           </Link>

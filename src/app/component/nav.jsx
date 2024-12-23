@@ -8,7 +8,7 @@ const nav = () => {
     const pathname = usePathname()
 
     return (
-        <nav className="flex justify-start items-center p-4 relative text ">
+        <div className="flex justify-start items-center p-4 relative text ">
   <div className="absolute top-6 left-48">
     <Link
       href="/"
@@ -30,7 +30,7 @@ const nav = () => {
     </Link>
   </div>
  
-</nav>
+</div>
 
 
     )

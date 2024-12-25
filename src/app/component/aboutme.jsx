@@ -22,8 +22,3 @@ const Aboutme = () => {
 
 export default Aboutme
 
-// **"Hi, I’m [Your Name], a Backend Developer passionate about crafting efficient, scalable, and user-friendly applications. My journey revolves around leveraging modern technologies like JavaScript, React, Node.js, and MongoDB to solve real-world problems.
-
-// Beyond code, I enjoy exploring low-level programming with Zig and C, pushing my boundaries as a developer. Collaboration is my superpower, and I believe in creating impactful solutions through teamwork.
-
-// Feel free to connect, explore my portfolio, or collaborate on exciting projects!"**

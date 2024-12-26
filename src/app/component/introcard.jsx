@@ -6,7 +6,7 @@ const buttonLinks = [
   { label: "Projects", link: "/projects" },
   { label: "Portfolio", link: "/portfolio" },
   { label: "Blog", link: "/blog" },
-  { label: "About Me", link: "/about" }
+  { label: "More About Me", link: "/about" }
 ];
 
 const ButtonSection = () => {

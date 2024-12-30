@@ -37,7 +37,7 @@ const IntroCard = () => {
       <br />
       <br />
       <Image
-        src="timosdev99.github.io//cool.jpg"
+        src="/cool.jpg"
         alt="Example image"
         width={500}
         height={500}

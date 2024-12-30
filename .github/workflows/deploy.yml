@@ -10,10 +10,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -21,17 +19,21 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install
-        
+        run: |
+          npm install
+          npm install sharp
+
       - name: Build
         run: npm run build
-        
-      - name: Create .nojekyll file
-        run: touch out/.nojekyll
 
-      - name: Deploy to GitHub Pages
+      - name: Add .nojekyll file
+        run: |
+          touch out/.nojekyll
+          cp README.md out/
+
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
           branch: gh-pages
+          folder: out
           clean: true

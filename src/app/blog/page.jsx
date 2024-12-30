@@ -7,7 +7,7 @@ const myblog = [
 
 const blogs = () => {
 
-    return (
+    return ( 
         <div className=" mt-32   justify-center h-96  grid lg:grid-cols-4 gap-x-6 gap-y-6 p-2 sm:grid-cols-1">
              
               {myblog.map((blogs, index) => (

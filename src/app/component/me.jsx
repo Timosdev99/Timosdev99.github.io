@@ -26,7 +26,7 @@ const buttonLinks = [
 
 const Intro = () => {
     return(
-        <div className="top-80 mt-48 sm:mt-[700px] lg:mt-48  ">
+        <div className="top-80 mt-48 sm:mt-[-400px] lg:mt-[-300px]  ">
             <h1 className="text-center justify-center text-white text-xl">Introduction</h1>
             <br />
             <div className="text-xl lg:w-[1300px]  text-gray-400 font-light">

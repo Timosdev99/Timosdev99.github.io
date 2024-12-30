@@ -30,11 +30,11 @@ const skillset = [
   ];
   
   const Skilldisplay = () => {
-    return ( <div className="grid lg:grid-cols-4 gap-x-6 gap-y-6 p-2 sm:grid-cols-2">
+    return ( <div className="grid lg:grid-cols-4 gap-x-6 gap-y-6 p-2 sm:grid-cols-2 sm:gap-x-16">
         {skillset.map((skill, index) => (
           <span
             key={index}
-            className="px-4 py-2 bg-gradient-to-r from-blue-700 to-black-900 justify-center text-center rounded-3xl text-xl text-white hover:bg-slate-600 transition-all "
+            className="px-4 py-2 bg-gradient-to-r from-blue-700 to-black-900 justify-center text-center rounded-3xl lg:w-60 lg:text-xl text-white hover:bg-slate-600 transition-all sm:w-36 "
           >
             <i className= {`${skill.icon} mr-4`}></i> 
             {skill.name}

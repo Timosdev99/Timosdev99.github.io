@@ -2,7 +2,7 @@ const Aboutme = () => {
     return (
         <div>
    
-           <h1 className="justify-center items-center text-center text-xl">About Me</h1>
+           <h1 className="justify-center items-center text-center text-xl ">About Me</h1>
            <div className="text-xl   text-gray-400 font-light">
 <p>
   My name is Timothy, a self-taught programmer and a physics undergraduate with a strong foundation in web development.

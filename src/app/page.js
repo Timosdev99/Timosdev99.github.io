@@ -16,7 +16,7 @@ export default function Home() {
       
       <main className="flex flex-col gap-8 items-center sm:items-start">
         <Introcard />
-        <section className="mt-96">
+        <section className="mt-96 sm:w-full">
           <Intro />
         </section>
       </main>

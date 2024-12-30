@@ -24,10 +24,13 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build 
+        run: npm run build  # Ensure the build output is in the correct folder
+
+      - name: Add .nojekyll
+        run: touch build/.nojekyll  # Only if 'build' is your output folder
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: main
-          folder: out
+          folder: build  # Update to the correct folder (e.g., 'build' for React)

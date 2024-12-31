@@ -11,12 +11,12 @@ const buttonLinks = [
 
 const ButtonSection = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 text-center w-full max-w-md sm:grid-cols-1 sm:grid-rows-4 lg:flex lg:flex-row lg:gap-4 lg:justify-start lg:items-center lg:max-w-none p-4">
+    <div className="grid grid-cols-1 gap-4 text-center  max-w-md sm:grid-cols-1 sm:grid-rows-4 lg:flex lg:flex-row lg:gap-4 lg:justify-start lg:items-center lg:max-w-none p-4">
       {buttonLinks.map((button, index) => (
         <Link
           key={index}
           href={button.link}
-          className="text-white text-xl rounded-3xl bg-gradient-to-r from-green-500 to-black-900 px-6 py-2 hover:text-blue-700 transition-all 500 ease-linear hover:text-2xl w-full lg:w-auto whitespace-nowrap"
+          className="text-white md:text-sm lg:text-sm rounded-3xl bg-gradient-to-r from-green-500 to-black-900 px-6 py-2 hover:text-blue-700 transition-all 500 ease-linear hover:text-xl w-full lg:w-auto whitespace-nowrap"
         >
           {button.label}
         </Link>
@@ -27,11 +27,11 @@ const ButtonSection = () => {
 
 const IntroCard = () => {
   return (
-    <div className="relative px-4 md:px-8 lg:px-12 py-12 w-full max-w-7xl mx-auto">
-      <h1 className="text-4xl sm:text-6xl text-slate-100 font-bold">TIMOSDEV99</h1>
+    <div className="relative px-4 md:px-8 lg:px-12 py-12 lg:w-full lg:max-w-7xl lg:mx-auto lg:left-[-300px]  sm:left-11">
+      <h1 className="lg:text-6xl sm:text-4xl text-slate-100 font-bold">TIMOSDEV99</h1>
       <br />
       <br />
-      <p className="max-w-[700px] text-gray-400 leading-relaxed text-left text-xl sm:text-2xl">
+      <p className="max-w-[700px] text-gray-400 leading-relaxed text-left lg:w-full lg:text-xl sm:w-80 sm:text-xl">
         I'm a backend developer, whose world revolves around the intricate dance of data and logic that powers the digital experiences we interact with daily. But my passion for technology doesn't stop at writing efficient code or optimizing database queries. I'm on a quest to understand the very fabric of computation itself.
       </p>
       <br />
@@ -41,9 +41,9 @@ const IntroCard = () => {
         alt="Example image"
         width={500}
         height={500}
-        className="rounded-full object-cover mx-auto w-48 h-48 sm:w-48 sm:h-48 lg:w-[400px] lg:h-[400px] lg:absolute lg:left-[1000px] lg:top-12"
+        className="rounded-full object-cover mx-auto w-48 h-48 sm:w-48 sm:h-48 lg:w-[300px] lg:h-[300px] lg:absolute lg:left-[1000px] lg:top-12"
       />
-      <div className="mt-8">
+      <div className="mt-2">
         <ButtonSection />
       </div>
     </div>

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-t from-black via-[#0d1117] to-[#041534] bg-no-repeat `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-t from-black via-[#0d1117] to-[#041534] bg-no-repeat  `}
       >
   <header>
     <Nav />

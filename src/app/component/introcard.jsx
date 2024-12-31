@@ -27,7 +27,7 @@ const ButtonSection = () => {
 
 const IntroCard = () => {
   return (
-    <div className="relative px-4 md:px-8 lg:px-12 py-12 lg:w-full lg:max-w-7xl lg:mx-auto lg:left-[-50px]  sm:left-[-15px] ">
+    <div className="relative px-4 md:px-8 lg:px-12 py-12 lg:w-full lg:max-w-7xl lg:mx-auto lg:left-[-50px]  sm:left-[-10px] ">
       <h1 className="lg:text-6xl sm:text-4xl text-slate-100 font-bold">TIMOSDEV99</h1>
       <br />
       <br />

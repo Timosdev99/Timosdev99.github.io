@@ -26,7 +26,7 @@ const buttonLinks = [
 
 const Aboutme = () => {
     return (
-      <section className="mt-40 px-4 md:px-8 lg:px-16">
+      <section className="mt-16 px-4 md:px-8 lg:px-16">
         <h1 className="text-xl font-bold text-center mb-6">About Me</h1>
         <div className="text-lg text-gray-400 font-light space-y-6">
           <p>

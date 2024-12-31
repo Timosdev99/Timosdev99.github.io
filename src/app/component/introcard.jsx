@@ -27,11 +27,11 @@ const ButtonSection = () => {
 
 const IntroCard = () => {
   return (
-    <div className="relative px-4 md:px-8 lg:px-12 py-12 lg:w-full lg:max-w-7xl lg:mx-auto lg:left-[-300px]  sm:left-11">
+    <div className="relative px-4 md:px-8 lg:px-12 py-12 lg:w-full lg:max-w-7xl lg:mx-auto lg:left-[-50px]  sm:left-[-25px]">
       <h1 className="lg:text-6xl sm:text-4xl text-slate-100 font-bold">TIMOSDEV99</h1>
       <br />
       <br />
-      <p className="max-w-[700px] text-gray-400 leading-relaxed text-left lg:w-full lg:text-xl sm:w-80 sm:text-xl">
+      <p className="max-w-[700px] text-gray-400 leading-relaxed  lg:w-full lg:text-xl sm:w-80 sm:text-xl">
         I'm a backend developer, whose world revolves around the intricate dance of data and logic that powers the digital experiences we interact with daily. But my passion for technology doesn't stop at writing efficient code or optimizing database queries. I'm on a quest to understand the very fabric of computation itself.
       </p>
       <br />

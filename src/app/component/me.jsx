@@ -26,20 +26,25 @@ const buttonLinks = [
 
 const Intro = () => {
     return(
-        <div className="top-80 mt-48 sm:mt-[-400px] lg:mt-[-350px]  sm:w-96 ">
-            <h1 className="text-center justify-center text-white text-xl">Introduction</h1>
-            <br />
-            <div className="lg:text-xl lg:w-[1300px]  text-gray-400 font-light   ">
-            <p>thanks for getting this far. Welcome to my personal web site where i will share my skill, experience, projects, more about me and my journey as a programmer and what i have learnt </p>
-            <br />
-            <p>always feel free if you want to reach out to me or would like to collaborate on a project</p>
-            <br />
-            <p>you can also reach out to me on timothyisah4@gmail.com </p>
-            </div>
-            <div className="text-center">
-                <ButtonSection/>
-            </div>
-        </div>
+      <div className="top-80  mt-48 sm:mt-[-400px] lg:mt-[-400px] sm:w-full lg:w-full  mx-auto sm:left-[-25px]">
+      <h1 className="text-center text-white text-xl">Introduction</h1>
+      <br />
+      <div className="lg:text-xl text-gray-400 font-light px-4">
+        <p>
+          Thanks for getting this far. Welcome to my personal website where I will
+          share my skills, experience, projects, more about me, my journey as a
+          programmer, and what I have learned.
+        </p>
+        <br />
+        <p>Always feel free to reach out if you'd like to collaborate on a project.</p>
+        <br />
+        <p>You can also reach out to me at timothyisah4@gmail.com.</p>
+      </div>
+      <div className="text-center">
+        <ButtonSection />
+      </div>
+    </div>
+    
     )
 }
 

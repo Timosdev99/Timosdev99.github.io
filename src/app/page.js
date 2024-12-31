@@ -22,7 +22,7 @@ export default function Home() {
       </main>
       <button
         onClick={toggleShowMore}
-        className="px-4 py-2 bg-gradient-to-r from-blue-900 via-blue-800 to-black-900 justify-center text-center rounded-3xl text-xl text-white hover:bg-slate-600 transition-all hover:text-green-500"
+        className="lg:mt-[-100px] px-4 py-2 bg-gradient-to-r from-blue-900 via-blue-800 to-black-900 justify-center text-center rounded-3xl text-xl text-white hover:bg-slate-600 transition-all hover:text-green-500"
       >
         {show ? "Show Less" : "Show More"}
       </button>
@@ -30,7 +30,7 @@ export default function Home() {
      
       {show && (
        <div>
-         <section className="w-full flex justify-center ">
+         <section className="w-full flex justify-center">
           <Skill />
         </section>
         <br />

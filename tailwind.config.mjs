@@ -12,7 +12,16 @@ export default {
         foreground: "var(--foreground)",
       },
       screens: {
-        sm: '320px',
+        sm: "320px",
+      },
+      keyframes: {
+        shake: {
+          "0%, 100%": { transform: "translateX(-5px)" },
+          "50%": { transform: "translateY(-15px)" },
+        },
+      },
+      animation: {
+        shake: "shake 0.5s ease-in-out",
       },
     },
   },

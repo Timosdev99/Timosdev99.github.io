@@ -84,7 +84,7 @@ const Projects = () => {
                             <p className="text-sm text-white  mb-4">{project.stack.split(", ").map((tech, i) => (
                                     <span
                                         key={i}
-                                        className="text-xs font-medium bg-gradient-to-r from-blue-700 to-black-900  text-white bg-slate-600 mr-1  px-2 py-1 rounded-full"
+                                       className="text-xs font-medium bg-gradient-to-r from-blue-700 to-black-900 text-white bg-slate-600 mr-1 px-2 py-1 rounded-full hover:animate-shake inline-block"
                                     >
                                         {tech}
                                     </span>

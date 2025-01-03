@@ -1,6 +1,6 @@
 const buttonLinks = [
     { label: "GitHub", link: "https://github.com/timosdev99" },
-    { label: "Linkedin", link: "www.linkedin.com/in/timothy-isah-ba10a928b" },
+    { label: "Linkedin", link: "https://www.linkedin.com/in/timothy-isah-ba10a928b/" },
     { label: "Twitter", link: "https://x.com/Timothy9199" },
     { label: "Reddit", link: "https://www.reddit.com/user/tmfunc/" },
   ];

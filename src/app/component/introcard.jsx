@@ -4,22 +4,33 @@ import Image from 'next/image';
 
 const buttonLinks = [
   { label: "Projects", link: "/projects" },
-  { label: "Portfolio", link: "/portfolio" },
+  { label: "Resume", link: "/Isah_Timothy_Resume.pdf", download: "Isah_Timothy_Resume.pdf" },
   { label: "Blog", link: "/blog" },
   { label: "More About Me", link: "/about" }
 ];
 
 const ButtonSection = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 text-center  max-w-md sm:grid-cols-1 sm:grid-rows-4 lg:flex lg:flex-row lg:gap-4 lg:justify-start lg:items-center lg:max-w-none p-4">
+    <div className="grid grid-cols-1 gap-4 text-center max-w-md sm:grid-cols-1 sm:grid-rows-4 lg:flex lg:flex-row lg:gap-4 lg:justify-start lg:items-center lg:max-w-none p-4">
       {buttonLinks.map((button, index) => (
-        <Link
-          key={index}
-          href={button.link}
-          className="text-white md:text-sm lg:text-sm rounded-3xl bg-gradient-to-r from-green-500 to-black-900 px-6 py-2 hover:text-blue-700 transition-all 500 ease-linear hover:text-xl w-full lg:w-auto whitespace-nowrap"
-        >
-          {button.label}
-        </Link>
+        button.download ? ( 
+          <a
+            key={index}
+            href={button.link}
+            download={button.download} 
+            className="text-white md:text-sm lg:text-sm rounded-3xl bg-gradient-to-r from-green-500 to-black-900 px-6 py-2 hover:text-blue-700 transition-all 500 ease-linear hover:text-xl w-full lg:w-auto whitespace-nowrap"
+          >
+            {button.label}
+          </a>
+        ) : (
+          <Link
+            key={index}
+            href={button.link}
+            className="text-white md:text-sm lg:text-sm rounded-3xl bg-gradient-to-r from-green-500 to-black-900 px-6 py-2 hover:text-blue-700 transition-all 500 ease-linear hover:text-xl w-full lg:w-auto whitespace-nowrap"
+          >
+            {button.label}
+          </Link>
+        )
       ))}
     </div>
   );

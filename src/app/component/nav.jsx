@@ -43,7 +43,7 @@ const nav = () => {
               Home
             </Link>
             <Link
-              href="/portfolio"
+              href="#"
               className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
             >
               Portfolio

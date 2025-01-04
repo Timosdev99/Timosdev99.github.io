@@ -38,7 +38,7 @@ const Intro = () => {
         <br />
         <p>Always feel free to reach out if you'd like to collaborate on a project.</p>
         <br />
-        <p>You can also reach out to me at timothyisah4@gmail.com.</p>
+        <p>You can also reach out to me at <a className="text-blue-700" href="mailto:timothyisah4@gmail.com">timothyisah4@gmail.com.</a></p>
       </div>
       <div className="text-center">
         <ButtonSection />

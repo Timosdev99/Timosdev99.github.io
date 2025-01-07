@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const buttonLinks = [
   { label: "Projects", link: "/projects" },
-  { label: "Resume", link: "/Isah_Timothy_Resume.pdf", download: "Isah_Timothy_Resume.pdf" },
+  { label: "Resume", link: "/Timothy_resume.pdf", download: "Timothy_resume.pdf" },
   { label: "Blog", link: "/blog" },
   { label: "More About Me", link: "/about" }
 ];

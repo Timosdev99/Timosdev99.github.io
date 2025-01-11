@@ -6,6 +6,11 @@ const project = [
         stack: "Node.Js",
         link: "https://github.com/Timosdev99/websocket-server",
         description: "A WebSocket server implementation enabling real-time, bidirectional communication between clients and servers."
+    }, {
+        name: "HR Management AI agent",
+        stack: "TypeScript, Express.js, LangGraph",
+        link: "https://github.com/Timosdev99/Agent",
+        description: "an AI agent used for HR management it uses LangGraph and MongoDB for generating and managing AI agents and conversational application using agentic Approach."
     },
     {
         name: "Health Compliance App Backend",

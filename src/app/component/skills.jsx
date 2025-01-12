@@ -3,7 +3,8 @@ import { useState } from 'react';
 
 const skillset = [
     { name: "javascript", icon: "devicon-javascript-plain colored " },
-    { name: "css", icon: "devicon-css3-plain colored" },
+    { name: "Typescript", icon: "devicon-typescript-plain colored" },
+    { name: "Css", icon: "devicon-css3-plain colored" },
     { name: "HTML", icon: "devicon-html5-plain colored" },
     { name: "Express js", icon: "devicon-express-original" },
     { name: "React", icon: "devicon-react-original colored" },
@@ -23,6 +24,9 @@ const skillset = [
     {name: "Socketio", icon: "devicon-socketio-original colored"},
     {name: "Vscode", icon:"devicon-vscode-plain colored"},
     {name: "vim", icon: "devicon-vim-plain colored"},
+    {name: "Docker", icon: "devicon-docker-plain colored"},
+    {name: "oAuth", icon: "devicon-oauth-plain colored"},
+    {name: "GithubAction", icon: "devicon-githubactions-plain"},
     { name: "</> Restful API", icon: "devicon-restfulapi-original" },
     { name: "</> Problem Solving", icon: "devicon-problem-solving-original colored" },
     { name: "</> Team Work", icon: "devicon-teamwork-original colored" },

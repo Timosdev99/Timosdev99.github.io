@@ -13,10 +13,28 @@ const project = [
         description: "an AI agent used for HR management it uses LangGraph and MongoDB for generating and managing AI agents and conversational application using agentic Approach."
     },
     {
+        name: "RegEx patttern recognition engine",
+        stack: "Zig",
+        link: "https://github.com/Timosdev99/RegEx",
+        description: "implemnentation of a regex engine form a Russ Cox article."
+    },
+    {
+        name: "File explorer",
+        stack: "Zig",
+        link: "https://github.com/Timosdev99/RegEx",
+        description: "A simple file explorer TUI in zig, that can analyze file, navigate to directory and also list and delete file."
+    },
+    {
         name: "Health Compliance App Backend",
         stack: "Node.Js, Cloudinary, MongoDB",
         link: "https://github.com/Timosdev99/health-compliance-API",
         description: "Backend service for managing health compliance data, including secure storage and image handling with Cloudinary."
+    },
+     {
+        name: "Distributed task-management system ",
+        stack: "TypeScript, Express, Redis, socket.io, MongoDB",
+        link: "https://github.com/Timosdev99/distributed-taskmanager",
+        description: "Backend service for a distributed task manager system, including real time data update."
     },
     {
         name: "Task Manager CLI Tool",
@@ -89,7 +107,7 @@ const Projects = () => {
                             <p className="text-sm text-white  mb-4">{project.stack.split(", ").map((tech, i) => (
                                     <span
                                         key={i}
-                                       className="text-xs font-medium bg-gradient-to-r from-blue-700 to-black-900 text-white bg-slate-600 mr-1 px-2 py-1 rounded-full hover:animate-shake inline-block"
+                                       className="text-xs font-medium bg-gradient-to-r my-1 from-blue-700 to-black-900 text-white bg-slate-600 mr-1 px-2 py-1 rounded-full hover:animate-shake inline-block"
                                     >
                                         {tech}
                                     </span>

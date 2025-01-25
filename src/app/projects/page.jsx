@@ -21,7 +21,7 @@ const project = [
     {
         name: "File explorer",
         stack: "Zig",
-        link: "https://github.com/Timosdev99/RegEx",
+        link: "https://github.com/Timosdev99/file_explorer",
         description: "A simple file explorer TUI in zig, that can analyze file, navigate to directory and also list and delete file."
     },
     {
@@ -32,7 +32,7 @@ const project = [
     },
      {
         name: "Distributed task-management system ",
-        stack: "TypeScript, Express, Redis, socket.io, MongoDB",
+        stack: "TypeScript, Express, Redis, socket.io, MongoDB, Gemini",
         link: "https://github.com/Timosdev99/distributed-taskmanager",
         description: "Backend service for a distributed task manager system, including real time data update."
     },
@@ -49,28 +49,10 @@ const project = [
         description: "A CLI tool for generating AI-powered project ideas to spark creativity. It leverages Commander.js for an intuitive interface and integrates the Gemini API to deliver intelligent and context-aware suggestions."
     },
     {
-        name: "Blog App Backend",
-        stack: "Node.Js, MongoDB, Cloudinary",
-        link: "https://github.com/Timosdev99/blog-api-s-",
-        description: "RESTful API for blog applications, offering features like post creation, media uploads, and user management."
-    },
-    {
         name: "My Personal Website",
-        stack: "Next.js, Tailwind CSS",
+        stack: "Next.js, Tailwind CSS, Github Action",
         link: "https://github.com/Timosdev99/Timosdev99.github.io",
         description: "A responsive personal portfolio website showcasing my skills, projects, and contact information."
-    },
-    {
-        name: "CSV Parser",
-        stack: "Zig",
-        link: "https://github.com/Timosdev99/CSV-parser-",
-        description: "A Zig-based CSV to JSON parser designed for high performance and lightweight file conversion."
-    },
-    {
-        name: "Weather Info API",
-        stack: "Node.Js",
-        link: "https://github.com/Timosdev99/weather-info-endpoint",
-        description: "An API that provides real-time weather information for any location and it uses geographical data to fetch information with easy-to-integrate endpoints."
     },
     {
         name: "Promptia",
@@ -78,18 +60,7 @@ const project = [
         link: "https://github.com/Timosdev99/next-app",
         description: "A modern web application combining MongoDB's database capabilities with a clean UI built with Next.js and Tailwind CSS. It is a platform built to share different prompt"
     },
-    {
-        name: "Next App",
-        stack: "Next.js, Clerk, Tailwind CSS",
-        link: "https://github.com/Timosdev99/Next-port-",
-        description: "A Next.js application featuring user authentication with Clerk and styled with Tailwind CSS for a seamless experience."
-    },
-    {
-        name: "User Authentication",
-        stack: "Node.Js, JWT",
-        link: "https://github.com/Timosdev99/user-authentication-with-node-js",
-        description: "A secure authentication system using JSON Web Tokens (JWT) for Node.js applications."
-    }
+    
 ];
 
 const Projects = () => {

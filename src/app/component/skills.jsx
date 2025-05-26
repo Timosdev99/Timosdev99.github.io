@@ -14,7 +14,7 @@ const skillset = [
     { name: "C lang", icon: "devicon-c-plain-wordmark" },
     { name: "Zig", icon: "devicon-zig-original colored" },
     { name: "Vercel", icon: "devicon-vercel-original colored" },
-    { name: "Nodemon", icon: "devicon-nodemon-plain colored" },
+    { name: "Rust", icon: "devicon-rust-original colored" },
     { name: "Aws", icon: "devicon-amazonwebservices-plain-wordmark colored" },
     { name: "Git", icon: "devicon-git-plain colored" },
     { name: "Github", icon: "devicon-github-original colored" },

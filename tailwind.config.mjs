@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-montserrat)'],
+        mono: ['var(--font-geist-mono)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

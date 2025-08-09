@@ -12,7 +12,7 @@ export default function Home() {
   };
 
   return (
-    <div className=" flex flex-col items-center min-h-screen gap-16 p-8 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className=" flex flex-col items-center min-h-screen gap-16 p-2 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       
       <main className="flex flex-col gap-8 items-center sm:items-start">
         <Introcard />

@@ -15,7 +15,7 @@ const nav = () => {
          
         
           <button
-            className="md:hidden block focus:outline-none"
+            className="md:hidden block focus:outline-none text-gray-800"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -38,24 +38,24 @@ const nav = () => {
           <div className="hidden md:flex space-x-4 text-2xl justify-start items-center p-4  top-6 left-48 relative text ">
             <Link
               href="/"
-              className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
+              className="mr-4 text-2xl text-gray-400 hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
             >
               Home
             </Link>
             <Link
-              href="#"
-              className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
+              href="/library"
+              className="mr-4 text-2xl text-gray-400 hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
             >
-              Portfolio
+              Libarary
             </Link>
             <Link
               href="/blog"
-              className="mr-4 text-2xl hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
+              className="mr-4 text-2xl text-gray-400 hover:text-green-400 transition-all duration-500 ease-linear hover:text-3xl"
             >
               Blog
             </Link>
           </div>
-        </div>
+        </div>/
   
         <div
   className={`md:hidden mt-4 space-y-2 transition-all duration-500 ease-linear ${
@@ -66,19 +66,19 @@ const nav = () => {
 >
   <Link
     href="/"
-    className="block text-2xl hover:text-green-400 transition-all duration-300"
+    className="block text-2xl text-gray-400 hover:text-green-400 transition-all duration-300"
   >
     Home
   </Link>
   <Link
-    href="/portfolio"
-    className="block text-2xl hover:text-green-400 transition-all duration-300"
+    href="/library"
+    className="block text-gray-400 text-2xl hover:text-green-400 transition-all duration-300"
   >
-    Portfolio
+    Libarary
   </Link>
   <Link
     href="/blog"
-    className="block text-2xl hover:text-green-400 transition-all duration-300"
+    className="block text-2xl text-gray-400 hover:text-green-400 transition-all duration-300"
   >
     Blog
   </Link>

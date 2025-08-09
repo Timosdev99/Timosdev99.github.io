@@ -54,12 +54,6 @@ const project = [
         link: "https://github.com/Timosdev99/Timosdev99.github.io",
         description: "A responsive personal portfolio website showcasing my skills, projects, and contact information."
     },
-    {
-        name: "Promptia",
-        stack: "Next.js, Tailwind CSS, MongoDB",
-        link: "https://github.com/Timosdev99/next-app",
-        description: "A modern web application combining MongoDB's database capabilities with a clean UI built with Next.js and Tailwind CSS. It is a platform built to share different prompt"
-    },
     
 ];
 
@@ -71,21 +65,21 @@ const Projects = () => {
                 {project.map((project, index) => (
                     <div
                         key={index}
-                        className=" shadow-md rounded-lg overflow-hidden border border-gray-200 transition-transform hover:scale-105 bg-gradient-to-t from-blue-700 via-black to-black-900"
+                        className=" shadow-md rounded-lg overflow-hidden border border-blue-800 transition-transform hover:scale-105 "
                     >
                         <div className="p-6">
                             <h2 className="text-xl font-semibold  text-white mb-2">{project.name}</h2>
                             <p className="text-sm text-white  mb-4">{project.stack.split(", ").map((tech, i) => (
                                     <span
                                         key={i}
-                                       className="text-xs font-medium bg-gradient-to-r my-1 from-blue-700 to-black-900 text-white bg-slate-600 mr-1 px-2 py-1 rounded-full hover:animate-shake inline-block"
+                                       className="text-xs font-medium my-1  text-white bg-slate-600 mr-1 px-2 py-1 rounded-full hover:animate-shake inline-block"
                                     >
                                         {tech}
                                     </span>
                                 ))}</p>
                             <p className="text-white mb-4">{project.description}</p>
                             {project.link && (
-                                <a
+                                <a 
                                     href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"

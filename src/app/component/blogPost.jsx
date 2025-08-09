@@ -3,13 +3,16 @@
 import { marked } from 'marked';
 import './blogPost.css';
 
-const BlogPostContent = ({ content }) => {
+const BlogPostContent = ({ content, date }) => {
     const htmlContent = marked(content);
     return (
-        <div
-            className="blog-post-content mt-4"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
-        />
+        <div>
+            <p className="text-gray-400 text-sm">{date}</p>
+            <div
+                className="blog-post-content mt-4"
+                dangerouslySetInnerHTML={{ __html: htmlContent }}
+            />
+        </div>
     );
 };
 

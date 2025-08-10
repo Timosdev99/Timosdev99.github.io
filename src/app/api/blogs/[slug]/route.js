@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export async function generateStaticParams() {
     const posts = await getBlogPosts();
     return posts.map((post) => ({
-        slug: post.replace(/\.md$/, ''),
+        slug: post.slug,
     }));
 }
 

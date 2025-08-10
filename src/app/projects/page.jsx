@@ -65,7 +65,7 @@ const Projects = () => {
                 {project.map((project, index) => (
                     <div
                         key={index}
-                        className=" shadow-md rounded-lg overflow-hidden border border-blue-800 transition-transform hover:scale-105 "
+                        className="bg-white/10 backdrop-blur-md shadow-md rounded-lg overflow-hidden border border-blue-800 transition-transform hover:scale-105 "
                     >
                         <div className="p-6">
                             <h2 className="text-xl font-semibold  text-white mb-2">{project.name}</h2>

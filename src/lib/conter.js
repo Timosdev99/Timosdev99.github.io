@@ -7,7 +7,13 @@ const Counter = ({ className }) => {
   useEffect(() => {
     if (Counting < 99) {
       const timer = setInterval(() => {
-        setCounting((prevCount) => prevCount + 10);
+        setCounting((prevCount) => {
+          const nextCount = prevCount + 10;
+          if (nextCount > 99) {
+            return 99;
+          }
+          return nextCount;
+        });
       }, 500)
       return () => clearInterval(timer)
     }

@@ -19,14 +19,16 @@ export default function RootLayout({ children }) {
         <div class="stars stars-small"></div>
         <div class="stars stars-medium"></div>
         <div class="stars stars-large"></div>
-  <header>
-    <Nav />
-  </header>
+        <header>
+          <Nav />
+        </header>
 
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
 
         <footer>
-          {/* <Footer /> */}
+          <Footer />
         </footer>
       </body>
     </html>

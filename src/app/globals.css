@@ -4,9 +4,39 @@
 
 @import "./star-background.css";
 
+*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url('/background.jpg');
-  background-size: cover;
-  background-attachment: fixed;
+  font-family: Georgia,'Times New Roman',serif;
+  background-color: #000; 
+  min-height:100vh;
+  color:#fff;
+  display: flex; 
+  flex-direction: column; 
+background-image: repeating-linear-gradient(
+  90deg,
+  transparent,
+  transparent calc(12.5% - 1px),
+  rgba(255,255,255,0.045) calc(12.5% - 1px),
+  rgba(255,255,255,0.045) 12.5%
+);
 }
+
+
+.g-row {
+  position: relative;
+  border-bottom: 1px solid #1e1e1e;
+}
+.g-row::before {
+  content:'';
+  position:absolute; inset:0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent calc(12.5% - 1px),
+    #1e1e1e calc(12.5% - 1px),
+    #1e1e1e 12.5%
+  );
+  pointer-events:none; z-index:0;
+}
+.g-row > * { position:relative; z-index:1; }

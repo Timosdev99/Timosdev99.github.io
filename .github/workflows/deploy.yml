@@ -27,6 +27,7 @@ jobs:
         run: npm run build
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          WAKATIME_API_KEY: ${{secrets.WAKATIME_API_KEY }}
 
       - name: Add .nojekyll file
         run: |

@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
 const services = [
   "SaaS Development",
   "Enterprise Solutions",
@@ -50,45 +48,34 @@ const stack = {
 };
 
 export default function Skill() {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
 
   return (
     <>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
       <style>{`
-      @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
-      .font-syne { font-family: 'Syne', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+        .font-syne { font-family: 'Syne', sans-serif; }
 
-      .col-grid {
-        background-image: repeating-linear-gradient(
-          90deg,
-          transparent,
-          transparent calc(12.5% - 1px),
-                                                    rgba(255,255,255,0.055) calc(12.5% - 1px),
-                                                    rgba(255,255,255,0.055) 12.5%
-        );
-      }
-
-      .text-hero-build { font-size: clamp(30px, 3vw, 60px); }
-
-      .fade-up    { opacity:0; transform:translateY(16px); transition: opacity .6s ease, transform .6s ease; }
-      .fade-up.in { opacity:1; transform:translateY(0); }
-
-     
-      @media (max-width: 640px) {
-        .text-hero-build { font-size: clamp(22px, 6.5vw, 34px); }
-
-        .services-panel {
-          border-right: none !important;
-          border-bottom: 1px solid rgba(255,255,255,0.055) !important;
+        .col-grid {
+          background-image: repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent calc(12.5% - 1px),
+            rgba(255,255,255,0.055) calc(12.5% - 1px),
+            rgba(255,255,255,0.055) 12.5%
+          );
         }
 
-        .stack-panel { padding: 20px 16px !important; }
+        .text-hero-build { font-size: clamp(22px, 5vw, 60px); }
 
-        .stack-pill { font-size: 12px !important; padding: 4px 8px !important; }
-      }
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .anim-1 { animation: fadeUp 0.6s ease forwards 0.05s; }
+        .anim-2 { animation: fadeUp 0.6s ease forwards 0.15s; }
+        .anim-3 { animation: fadeUp 0.6s ease forwards 0.22s; }
       `}</style>
 
       <div className="col-grid fixed inset-0 pointer-events-none z-0" />
@@ -96,10 +83,7 @@ export default function Skill() {
       <div className="font-syne min-h-screen text-white relative">
         <div className="relative z-10">
 
-          <div
-            className={`px-4 sm:px-8 pt-12 pb-10 fade-up ${mounted ? "in" : ""}`}
-            style={{ transitionDelay: "50ms" }}
-          >
+          <div className="anim-1 opacity-0 px-4 sm:px-8 pt-10 sm:pt-12 pb-8 sm:pb-10">
             <h1 className="text-hero-build font-extrabold leading-[1.1] tracking-tight">
               I Write <span className="text-cyan-400">Clean Software</span>
             </h1>
@@ -110,14 +94,11 @@ export default function Skill() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-white/[0.055]">
 
-            <div
-              className={`services-panel px-4 sm:px-8 py-10 bg-cyan-800/60 md:border-r border-white/[0.055] fade-up ${mounted ? "in" : ""}`}
-              style={{ transitionDelay: "150ms" }}
-            >
-              <h2 className="text-cyan-400 font-bold text-lg mb-7">Services</h2>
-              <ul className="space-y-5">
+            <div className="anim-2 opacity-0 px-4 sm:px-8 py-8 sm:py-10 bg-cyan-800/60 border-b md:border-b-0 md:border-r border-white/[0.055]">
+              <h2 className="text-cyan-400 font-bold text-base sm:text-lg mb-5 sm:mb-7">Services</h2>
+              <ul className="space-y-3 sm:space-y-5">
                 {services.map((s) => (
-                  <li key={s} className="flex items-center gap-3 text-white/80 text-[17px]">
+                  <li key={s} className="flex items-center gap-3 text-white/80 text-[15px] sm:text-[17px]">
                     <span className="text-white/40 text-sm">·</span>
                     {s}
                   </li>
@@ -125,25 +106,26 @@ export default function Skill() {
               </ul>
             </div>
 
-            <div
-              className={`stack-panel px-2 sm:px-4 py-8 fade-up ${mounted ? "in" : ""}`}
-              style={{ transitionDelay: "220ms" }}
-            >
-              <div className="border border-cyan-900/70 hover:shadow-xl hover:shadow-cyan-800 hover:border-6 rounded-xl p-4 bg-white/[0.02]">
-                <h2 className="text-cyan-400 font-bold text-lg mb-5">Tech Stack</h2>
+            <div className="anim-3 opacity-0 px-3 sm:px-4 py-6 sm:py-8">
+              <div className="border border-cyan-900/70 hover:shadow-xl hover:shadow-cyan-800 hover:border-cyan-700 rounded-xl p-3 sm:p-4 bg-white/[0.02] transition-all">
+                <h2 className="text-cyan-400 font-bold text-base sm:text-lg mb-4 sm:mb-5">Tech Stack</h2>
 
                 {Object.entries(stack).map(([category, items]) => (
-                  <div key={category} className="mb-5 last:mb-0">
-                    <p className="text-[11px] font-semibold tracking-widest text-white/35 mb-3 uppercase">
+                  <div key={category} className="mb-4 last:mb-0">
+                    <p className="text-[10px] sm:text-[11px] font-semibold tracking-widest text-white/35 mb-2 sm:mb-3 uppercase">
                       {category}
                     </p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
                       {items.map(({ name, icon }) => (
                         <span
                           key={name}
-                          className="stack-pill inline-flex items-center gap-1.5 px-2 py-1 rounded-full border border-white/[0.12] bg-white/[0.04] text-sm text-white/80 hover:border-white/30 hover:text-white hover:bg-white/[0.07] transition-all cursor-default"
+                          className="inline-flex items-center gap-1 sm:gap-1.5 px-2 py-1 rounded-full
+                                     border border-white/[0.12] bg-white/[0.04]
+                                     text-[11px] sm:text-sm text-white/80
+                                     hover:border-white/30 hover:text-white hover:bg-white/[0.07]
+                                     transition-all cursor-default"
                         >
-                          <i className={`${icon} mr-1`}></i>
+                          <i className={`${icon} mr-0.5`}></i>
                           {name}
                         </span>
                       ))}

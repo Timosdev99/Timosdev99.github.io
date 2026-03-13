@@ -18,19 +18,14 @@ export default function Home() {
         <Loading onDone={() => setIsLoading(false)} />
       )}
 
-      <main className="flex flex-col gap-8 items-center sm:items-start">
+      <main>
         <Introcard />
+        <Skill />
+        <LetTalkSection />
       </main>
 
 
 
-      <div>
-        <section className="w-full flex justify-center">
-          <Skill />
-        </section>
-        <LetTalkSection />
-        <br /><br />
-      </div>
 
     </div>
   );

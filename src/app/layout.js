@@ -2,6 +2,7 @@ import { Montserrat } from 'next/font/google';
 import Nav from "./component/nav";
 import Footer from "./component/footer";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/next';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -25,11 +26,13 @@ export default function RootLayout({ children }) {
 
         <main className="flex-grow">
           {children}
+
         </main>
 
         <footer>
           <Footer />
         </footer>
+        <Analytics />
       </body>
     </html>
   );

@@ -213,8 +213,18 @@ export default function LetTalkSection() {
           </div>
         </form>
 
-        {success && <p style={{ textAlign: "center", color: "lightgreen", marginTop: "10px" }}>Your message has been sent succesfully. i will ASAP hold on</p>}
-        {error && <p style={{ textAlign: "center", color: "red", marginTop: "10px" }}>Error: {error}</p>}
+        {success && <p style={{ textAlign: "center", color: "lightgreen", marginTop: "10px" }}>Your message has been sent succesfully.Will respond ASAP hold on</p>}
+        {error && <p style={{ textAlign: "center", color: "red", marginTop: "10px" }}>Fail to send message. try messaging me on telegram
+
+          <a href="https://t.me/tmot11x" className="group social-link flex items-center justify-between px-4 py-3
+                               border-b border-white/[0.055] text-[13px] font-medium text-white/80
+                               hover:text-white hover:bg-white/[0.04] transition-all min-w-[130px]"
+          >
+            telegram
+          </a>
+
+
+        </p>}
 
         {pathname == '/work' && (
           <a href="#" className="chat-pill">

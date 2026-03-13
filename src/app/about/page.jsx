@@ -257,7 +257,7 @@ export default function AboutPage() {
               I do write efficient code for profit and most time fun. I started writing code about ~5 years ago but i was familiar with computers at a very early age and had little ideas about programming i was so interested in hacking after watching the matrics .
             </p>
             <p className="bio-para">
-              I do work on fullstack application and blockchain infra most times but a few other things I get very curious about at this time includes Compilers, developer Distributed systems and some Hardware stuffs.
+              I do work on fullstack application and blockchain infra most times but a few other things I get very curious about at this time includes Compilers, dev tooling, Distributed systems and some Hardware stuffs.
             </p>
           </div>
         </div>

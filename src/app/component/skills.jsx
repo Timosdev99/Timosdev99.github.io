@@ -108,7 +108,7 @@ export default function Skill() {
 
             <div className="anim-3 opacity-0 px-3 sm:px-4 py-6 sm:py-8">
               <div className="border border-cyan-900/70 hover:shadow-xl hover:shadow-cyan-800 hover:border-cyan-700 rounded-xl p-3 sm:p-4 bg-white/[0.02] transition-all">
-                <h2 className="text-cyan-400 font-bold text-base sm:text-lg mb-4 sm:mb-5">Tech Stack</h2>
+                <h2 className="text-cyan-400 font-bold text-base sm:text-lg mb-4 sm:mb-5">My Stack</h2>
 
                 {Object.entries(stack).map(([category, items]) => (
                   <div key={category} className="mb-4 last:mb-0">

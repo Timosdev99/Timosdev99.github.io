@@ -9,7 +9,7 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 const siteTitle = "Timothy Isah";
 const siteDescription = "Timosdev personal website";
 const siteUrl = "https://timosdev99.vercel.app";
-const ogImage = "/X.jpg";
+const ogImage = "/Page.png";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),

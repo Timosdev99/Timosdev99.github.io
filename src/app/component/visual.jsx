@@ -21,7 +21,7 @@ const featuredProjects = [
   {
     title: "CMAS",
     description: "CMAS is a web-based academic result management system designed for Computer Science departments in Nigerian universities. It manages the complete lifecycle of student academic records from course registration through score entry, approval, GPA/CGPA computation, and transcript generation.",
-    tags: ["Next.js", "Tailwind CSS", "Motion", "Portfolio"],
+    tags: ["Next.js", "Tailwind", "EdTech", "Management", "Sql", "Fullstack"],
     imageAlt: "My Website preview",
     images: ["/cmas.png", "/cmas2.png", "/cmas3.png"],
     imageBg: "#0d2b1f",

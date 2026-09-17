@@ -1,10 +1,10 @@
-import { Montserrat } from 'next/font/google';
+// import { Montserrat } from 'next/font/google'; 
 import Nav from "./component/nav";
 import Footer from "./component/footer";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/next';
 
-const montserrat = Montserrat({ subsets: ['latin'] });
+const montserrat = { className: '' };
 
 const siteTitle = "Timothy Isah";
 const siteDescription = "Timosdev personal website";

@@ -57,7 +57,7 @@ const Nav = () => {
       <div className="flex items-center gap-3 flex-shrink-0">
 
         <Link
-          href="/work"
+          href="/resume"
           className="hidden sm:flex items-center gap-2 border border-[#2a2a2a] hover:border-green-500 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all duration-200 hover:text-green-400"
         >
           <span className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_6px_#4ade80]" />
@@ -111,7 +111,7 @@ const Nav = () => {
 
 
           <Link
-            href="/work"
+            href="/resume"
             className="mt-3 flex items-center gap-2 border border-[#2a2a2a] rounded-full px-4 py-2 text-sm font-semibold text-white w-fit"
           >
             <span className="w-2 h-2 rounded-full bg-green-400 shadow-[0_0_6px_#4ade80]" />

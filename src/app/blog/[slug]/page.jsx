@@ -1,6 +1,18 @@
 import BlogPostContent from '@/app/component/blogPost';
 import { getBlogPosts, getBlogPost } from '@/lib/blog';
 
+export async function generateMetadata({ params }) {
+    const post = await getBlogPost(params.slug);
+    return {
+        title: `Tim — ${post.title}`,
+        description: post.description || `${post.title} — a post by Timothy Isah.`,
+        openGraph: {
+            title: post.title,
+            url: `/blog/${params.slug}`,
+        },
+    };
+}
+
 export async function generateStaticParams() {
     const posts = await getBlogPosts();
     return posts.map(post => ({

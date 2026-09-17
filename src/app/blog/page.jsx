@@ -1,6 +1,11 @@
 import BlogList from '@/app/component/blogList';
 import { getBlogPosts } from '@/lib/blog';
 
+export const metadata = {
+  title: "Tim — Blog",
+  description: "Late-night thoughts and essays from Timothy Isah on systems, physics, and code.",
+};
+
 const Blogs = async () => {
     const posts = await getBlogPosts();
 

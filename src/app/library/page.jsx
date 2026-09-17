@@ -1,5 +1,10 @@
 import React from 'react';
 
+export const metadata = {
+  title: "Tim — Library",
+  description: "Currently reading list and learning resources — systems, physics, compilers, Rust, and blockchain.",
+};
+
 const ReadingListPage = () => {
   const readingList = [
     {

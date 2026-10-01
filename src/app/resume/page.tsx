@@ -58,7 +58,7 @@ const experience = [
 
 const projects = [
   {
-    name: "Cipher",
+    name: "Hermes",
     description:
       "Solana on-chain intelligence and trading infrastructure built around wallet intelligence and confluence scoring. Rust workspace with Neo4j Aura storage, Helius webhooks, and a Telegram bot interface.",
   },
